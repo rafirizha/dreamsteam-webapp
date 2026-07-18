@@ -81,7 +81,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop py-6 border-t border-outline-variant/30 text-center">
-        <p className="font-label-sm text-label-sm text-on-surface-variant">© 2024 Dreams Team Academy. Empowering Excellence.</p>
+        <p className="font-label-sm text-label-sm text-on-surface-variant">© 2024 Dev by Pasukan Rafi Corps™ Dreams Team Academy. Empowering Excellence.</p>
       </div>
     </footer>
   );
