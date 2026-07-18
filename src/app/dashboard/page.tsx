@@ -220,7 +220,7 @@ export default function Dashboard() {
                   </div>
                 </div>
                 <div className="p-3 text-center border-t border-outline-variant mt-2">
-                  <Link href="/dashboard/exams" className="font-label-sm text-label-sm text-secondary font-medium hover:underline">
+                  <Link href="/dashboard/calendar" className="font-label-sm text-label-sm text-secondary font-medium hover:underline">
                     View Full Calendar
                   </Link>
                 </div>

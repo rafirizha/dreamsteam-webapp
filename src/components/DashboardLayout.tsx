@@ -8,7 +8,7 @@ import { readAllTryoutResults } from "@/lib/tryout-results";
 
 interface DashboardLayoutProps {
   children: React.ReactNode;
-  activeTab: "dashboard" | "exams" | "results" | "profile";
+  activeTab: "dashboard" | "exams" | "calendar" | "results" | "profile";
   title: string;
 }
 
@@ -70,6 +70,7 @@ export default function DashboardLayout({ children, activeTab, title }: Dashboar
   const navItems: Array<{ tab: DashboardTab; label: string; shortLabel: string; icon: string; href: string }> = [
     { tab: "dashboard", label: "Dashboard", shortLabel: "Home", icon: "dashboard", href: "/dashboard" },
     { tab: "exams", label: "My Exams", shortLabel: "Exams", icon: "quiz", href: "/dashboard/exams" },
+    { tab: "calendar", label: "Calendar", shortLabel: "Calendar", icon: "calendar_month", href: "/dashboard/calendar" },
     { tab: "results", label: "Results", shortLabel: "Results", icon: "analytics", href: resultsHref },
     { tab: "profile", label: "Profile", shortLabel: "Profile", icon: "person", href: "/dashboard/profile" },
   ];
@@ -199,7 +200,7 @@ export default function DashboardLayout({ children, activeTab, title }: Dashboar
 
         {/* Mobile Bottom Nav Bar */}
         <nav className="fixed bottom-0 left-0 right-0 z-50 border-t border-outline-variant/70 bg-white/95 px-2 pb-[calc(0.75rem+env(safe-area-inset-bottom))] pt-2 backdrop-blur md:hidden">
-          <div className="mx-auto grid max-w-md grid-cols-4 gap-1">
+          <div className="mx-auto grid max-w-md grid-cols-5 gap-1">
             {navItems.map((item) => (
               <Link
                 key={item.tab}
